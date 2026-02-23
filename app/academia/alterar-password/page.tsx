@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
-import { useCandidaturas } from "../CandidaturasProvider";
+import { useCandidaturas } from "../dashboard/CandidaturasProvider"";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -239,4 +239,5 @@ function CandidaturasTable({ candidaturas }) {
       </table>
     </div>
   );
+
 }
