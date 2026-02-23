@@ -119,106 +119,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* EQUIPA DE DIREÇÃO — VERTICAL */}
-      <section className="w-full py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-[#0A2A43] text-center mb-14">
-            Equipa de Direção
-          </h2>
-
-          <div className="space-y-10">
-
-            {[
-              {
-                nome: "Dr. Xavi Soares",
-                cargo: "Diretor Clínico",
-                desc: "Responsável máximo pela supervisão clínica, coordenação estratégica e garantia da qualidade assistencial e formativa."
-              },
-              {
-                nome: "Dra. Luna Cross",
-                cargo: "Diretora Clínica",
-                desc: "Co-responsável pela direção clínica, assegurando rigor técnico, alinhamento pedagógico e excelência nos programas formativos."
-              },
-              {
-                nome: "Dr. André Oconner",
-                cargo: "Adjunto Clínico",
-                desc: "Apoia a direção clínica na gestão dos programas, garantindo a articulação entre prática hospitalar e formação."
-              },
-              {
-                nome: "Dr. Edward Oconner",
-                cargo: "Adjunto Clínico",
-                desc: "Responsável pelo acompanhamento dos formandos em contexto clínico e pela supervisão de metodologias práticas."
-              },
-              {
-                nome: "Dr. Miguel Oliveira",
-                cargo: "Médico",
-                desc: "Especialista clínico que contribui para o desenvolvimento de conteúdos técnicos e sessões práticas avançadas."
-              },
-              {
-                nome: "Dr. João Freitas",
-                cargo: "Médico",
-                desc: "Responsável por módulos clínicos e pela integração de casos reais nos programas de formação."
-              },
-              {
-                nome: "Enf. Pedro Rouxinol",
-                cargo: "Enfermeiro",
-                desc: "Profissional de referência na área de enfermagem, assegura a formação prática e o treino de competências essenciais."
-              },
-              {
-                nome: "Paramédico Nogueira",
-                cargo: "Paramédico",
-                desc: "Especialista em emergência pré-hospitalar, responsável por treinos de resposta rápida e simulação de cenários críticos."
-              },
-              {
-                nome: "Al Capone",
-                cargo: "Residente",
-                desc: "Residente em formação clínica supervisionada, desenvolvendo competências práticas em ambiente hospitalar."
-              },
-              {
-                nome: "Joana Barrados",
-                cargo: "Residente",
-                desc: "Profissional em formação clínica, participando em sessões práticas e simulações supervisionadas."
-              },
-              {
-                nome: "Francisco Rato",
-                cargo: "Residente",
-                desc: "Envolvido em atividades práticas supervisionadas, contribuindo para o treino clínico contínuo."
-              },
-              {
-                nome: "Silva",
-                cargo: "Residente",
-                desc: "Integra equipas de treino clínico, desenvolvendo competências essenciais sob supervisão."
-              },
-              {
-                nome: "Russo Bombado",
-                cargo: "Residente",
-                desc: "Participa em simulações avançadas e formação prática supervisionada."
-              },
-              {
-                nome: "Rodolfo Maria",
-                cargo: "Residente",
-                desc: "Apoia atividades práticas e desenvolve competências clínicas em contexto supervisionado."
-              },
-              {
-                nome: "Ramon Alves",
-                cargo: "Residente",
-                desc: "Envolvido em formação prática contínua, contribuindo para o ambiente de aprendizagem colaborativa."
-              }
-            ].map((pessoa) => (
-              <div
-                key={pessoa.nome}
-                className="bg-[#F5FAFF] p-8 rounded-xl shadow-md border border-[#DCE9F5]"
-              >
-                <h3 className="text-2xl font-semibold text-[#0A2A43]">{pessoa.nome}</h3>
-                <p className="text-red-600 font-medium mt-1">{pessoa.cargo}</p>
-                <p className="text-slate-700 mt-4 leading-relaxed">{pessoa.desc}</p>
-              </div>
-            ))}
-
-          </div>
-        </div>
-      </section>
-
       {/* METODOLOGIA */}
       <section className="w-full py-24 px-6 bg-[#F5FAFF]">
         <div className="max-w-5xl mx-auto">
@@ -438,4 +338,5 @@ export default function Page() {
 
     </main>
   );
+
 }
