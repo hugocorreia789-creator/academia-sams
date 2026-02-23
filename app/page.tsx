@@ -203,32 +203,56 @@ export default function Home() {
         </section>
 
         {/* ===================== ÁREAS DE FORMAÇÃO ===================== */}
-        <section className="w-full py-24 px-6 bg-white">
-          <h2 className="text-4xl font-bold text-center text-[#0A2A43] mb-12">
-            Áreas de Formação
-          </h2>
+<section className="w-full py-24 px-6 bg-white">
+  <h2 className="text-4xl font-bold text-center text-[#0A2A43] mb-12">
+    Áreas de Formação
+  </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-            {[
-              "Formação Clínica",
-              "Emergência Médica",
-              "Diagnóstico e Terapêutica",
-              "Formação Interna Hospitalar",
-              "Simulação e Treino",
-              "Competências Técnicas"
-            ].map((area) => (
-              <div
-                key={area}
-                className="bg-[#F5FAFF] p-8 rounded-xl shadow-md border border-[#DCE9F5] hover:shadow-xl hover:-translate-y-1 transition"
-              >
-                <h3 className="text-xl font-semibold text-[#0A2A43]">{area}</h3>
-                <p className="text-sm opacity-70 mt-2">Conteúdos em desenvolvimento.</p>
-              </div>
-            ))}
+    {[
+      {
+        titulo: "Formação Clínica",
+        conteudo:
+          "Programas orientados para o desenvolvimento de competências clínicas essenciais, desde a avaliação inicial do doente até à tomada de decisão baseada na evidência. Inclui módulos de exame físico, raciocínio clínico, abordagem por sintomas, atualização científica e integração de guidelines internacionais. Ideal para profissionais que procuram reforçar a prática clínica diária com rigor e segurança."
+      },
+      {
+        titulo: "Emergência Médica",
+        conteudo:
+          "Formação especializada para atuação em cenários de urgência e emergência, com treino em Suporte Básico e Avançado de Vida, via aérea difícil, trauma, gestão de paragem cardiorrespiratória e resposta rápida em situações críticas. Os cursos combinam simulação realista, algoritmos atualizados e treino prático intensivo para garantir uma intervenção eficaz em contextos de elevada pressão."
+      },
+      {
+        titulo: "Diagnóstico e Terapêutica",
+        conteudo:
+          "Cursos focados na interpretação de exames complementares de diagnóstico, desde análises laboratoriais até imagiologia. Inclui também módulos de terapêutica farmacológica, protocolos de tratamento, titulação de fármacos e abordagem terapêutica baseada na evidência. Ideal para profissionais que pretendem aprofundar a capacidade de decisão e precisão diagnóstica."
+      },
+      {
+        titulo: "Formação Interna Hospitalar",
+        conteudo:
+          "Programas estruturados para equipas hospitalares, com foco em segurança do doente, melhoria contínua, implementação de protocolos, comunicação clínica e trabalho multidisciplinar. Inclui formação obrigatória para equipas de internamento, serviços de urgência, cuidados intensivos e unidades especializadas."
+      },
+      {
+        titulo: "Simulação e Treino",
+        conteudo:
+          "Cenários de simulação de alta fidelidade que permitem treinar competências técnicas e não técnicas em ambiente controlado. Inclui simulação de emergências, comunicação em equipa, liderança, gestão de stress, tomada de decisão e treino de procedimentos. A simulação permite errar sem risco e aprender com feedback estruturado."
+      },
+      {
+        titulo: "Competências Técnicas",
+        conteudo:
+          "Workshops práticos dedicados ao desenvolvimento de técnicas essenciais na prática clínica: suturas, acessos vasculares, imobilizações, ventilação, interpretação de ECG, punção arterial, administração segura de terapêutica e muito mais. Ideal para quem procura treino prático intensivo com supervisão especializada."
+      }
+    ].map((area) => (
+      <div
+        key={area.titulo}
+        className="bg-[#F5FAFF] p-8 rounded-xl shadow-md border border-[#DCE9F5] hover:shadow-xl hover:-translate-y-1 transition"
+      >
+        <h3 className="text-xl font-semibold text-[#0A2A43]">{area.titulo}</h3>
+        <p className="text-sm opacity-70 mt-2 leading-relaxed">{area.conteudo}</p>
+      </div>
+    ))}
 
-          </div>
-        </section>
+  </div>
+</section>
 
         {/* ===================== CTA FINAL ===================== */}
         <section className="w-full py-24 px-6 bg-[#0A2A43] text-white text-center">
